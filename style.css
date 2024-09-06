@@ -1,0 +1,220 @@
+/* Reseta padding e margin */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Define a fonte padrão */
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Define estilos para o html e body */
+html, body {
+    height: 100%;
+    margin: 0;
+    background: url(Banner\ do\ YouTube\ Games\ Galáxia\ Rosa\ Azul\ Branco.png) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: column;
+    padding-bottom: 200vh;
+}
+
+/* Sobreposição com fundo escuro */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Estilos para o body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-top: 20vh;
+}
+
+/* Estilos para o título */
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.titulo > h3 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.titulo > h1 {
+    margin: 10px 0 0;
+    font-size: 70px;
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Estilos para ícones de redes sociais */
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    bottom: 200px;
+}
+
+.social-icon {
+    color: #ffffff;
+    font-size: 26px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+/* Estilos para o ícone de rolagem */
+.scroll-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 85px;
+}
+
+.scroll-down i {
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.scroll-down i:hover {
+    color: #007bff;
+}
+
+/* Estilos para a seção de projetos */
+#projetos {
+    display: flex;
+    position: relative;
+    top: 700px;
+    font-size: 40px;
+}
+
+.itens {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    width: 100%;
+    position: relative;
+    top: 550px;
+    gap: 80px;
+    transition: 0.5s;
+}
+
+.paragrafo {
+    background-color: rgba(119, 152, 170, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    font-size: 40px;
+    position: relative;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.itens :hover {
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+/* Estilos para a seção de tecnologias */
+.tecnologias {
+    margin-top: 400vh;
+    position: absolute;
+    color: white;
+    display: flex;
+    gap: 70px;
+}
+
+.tecnologias > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 170px;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(119, 152, 170, 0.2);
+    border-radius: 10px;
+    flex-direction: column;
+    position: relative; /* Necessário para o hover do span */
+}
+
+#tec {
+    margin-top: 320vh;
+    position: absolute;
+    color: white;
+    display: flex;
+    font-size: 50px;
+}
+
+/* Cores dos ícones */
+.fa-html5 {
+    color: #E44D26;
+}
+
+.fa-css3-alt {
+    color: #264DE4;
+}
+
+.fa-square-js {
+    color: #F7DF1E;
+}
+
+ .tecnologias span {
+        opacity: 0;
+        font-size: 20px;
+        color: white;
+        visibility: hidden; 
+        position: absolute; 
+        transform: translateY(100px); 
+        padding: 30px;
+        border-radius: 15px;
+        width: 280px;
+        height: 280px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        background-color: black;
+        transition: opacity 2s ease, transform 2s ease; /* Transição suave para opacity e transform */
+    }
+    
+    .tecnologias:hover span {
+        opacity: 1;
+        visibility: visible; 
+        transform: translateY(0); 
+    
+    }
+    
